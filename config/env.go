@@ -39,7 +39,9 @@ func initConfig() Config {
 		JWTExpirationInSeconds: getIntEnv("JWT_EXP", 3600*24*1),
 		JWTSecret:              getEnv("JWT_SECRET", "somesecret"),
 		ChainPrivateKey:        getEnv("CHAIN_PK", "ad80f301c7c1f30bffd51128638d20f6dde70245a5fe5b4ef9560c7d157bf150"),
-		PlatformAddress:        getEnv("PLATFORM_ADDR", "0x066322cE1C277E30b1c885D24692D66A186073EE"),
+		// NOT REAL PRIVATE KEY ASSOCIATED WITH ANY COINS
+		// PLACED HERE ONLY FOR TESTING PURPOSES
+		PlatformAddress: getEnv("PLATFORM_ADDR", "0x066322cE1C277E30b1c885D24692D66A186073EE"),
 	}
 }
 
