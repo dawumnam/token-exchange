@@ -2,11 +2,13 @@
 
 ## How to get started on MacOS
 1. Make sure golang, brew and docker is installed
-2. `brew install golang-migrate`
-3. `docker compose up -d`
-4. `make migrate-up`
-5. `make test`
-6. `make run`
+2. `git clone https://github.com/dawumnam/token-exchange.git`
+3. `cd token-exchange`
+4. `brew install golang-migrate`
+5. `docker compose up -d`
+6. `make migrate-up`
+7. `make test`
+8. `make run`
 
 ## Features Implemented
 - User registration and authentication
