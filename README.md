@@ -11,7 +11,7 @@
 8. `make run`
 
 ## Features Implemented
-- User registration and authentication
+- User registration, authentication, and logout
 - Token creation and deployment (onchain)
 - Token balance checking (offchain)
 - Token transfer between users (offchain)
