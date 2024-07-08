@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS tokens (
+    `id` INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    `contractAddress` VARCHAR(42) NOT NULL,
+    `name` VARCHAR(255) NOT NULL,
+    `symbol` VARCHAR(10) NOT NULL,
+    `ownerID` INT UNSIGNED NOT NULL,
+    `createdAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE KEY (contractAddress),
+    FOREIGN KEY (ownerID) REFERENCES users(id)
+);
